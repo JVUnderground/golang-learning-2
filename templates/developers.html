@@ -1,0 +1,23 @@
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="/style/style.css">
+        <title>Developer Shop</title>
+    </head>
+    <body>
+        <h1>Dev Shop</h1>
+        <h2>Cart</h2>
+        <div class="devs_table">
+            <table>
+                <tr>
+                    <td>Developer</td><td>Followers</td>
+                </tr>
+                {{range .}}
+                <tr>
+                    <td>{{.Name}}</td><td>{{.Followers}}</td>
+                </tr>
+                {{end}}
+            </table> 
+        </div>
+    </body>
+</html>
+

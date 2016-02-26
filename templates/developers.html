@@ -5,15 +5,15 @@
     </head>
     <body>
         <h1>Dev Shop</h1>
-        <h2>Cart</h2>
+        <h2>Our Developers</h2>
         <div class="devs_table">
             <table>
                 <tr>
-                    <td>Developer</td><td>Followers</td>
+                    <td>Developer</td><td>Price</td><td></td>
                 </tr>
                 {{range .}}
                 <tr>
-                    <td>{{.Name}}</td><td>{{.Followers}}</td>
+                    <td>{{.Name}}</td><td>{{.Followers}}</td><td><a href="#">Add to Cart</a></td>
                 </tr>
                 {{end}}
             </table> 

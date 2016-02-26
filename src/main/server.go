@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	styleHandler := http.FileServer(http.Dir("/style/"))
+	styleHandler := http.FileServer(http.Dir("/Users/joao/Code/developer-shop/src/script/style"))
 	http.Handle("/style/", http.StripPrefix("/style/", styleHandler))
 
 	router := MainRouter()

@@ -26,7 +26,7 @@ func showAllDevelopers(w http.ResponseWriter, r *http.Request) {
 		Developer{Name: "Caks"},
 	}
 	//d := Developer{Name: "Tufts"}
-	t, err := template.ParseFiles("templates/developers.html")
+	t, err := template.ParseFiles("../templates/developers.html")
 	if err != nil {
 		panic(err)
 	} else {

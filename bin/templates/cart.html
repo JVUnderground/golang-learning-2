@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>My Dev Shopping Cart</title>
+		<link rel="stylesheet" type="text/css" href="/style/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="/style/style.css">
+		<script src="/scripts/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="text-center">
+        <h1>Dev Shop</h1>
+        <h2><i>Why not look for more <a href="developers">developers</a>?</i></h2>
+		</div>
+		
+        <div class="devs_table">
+            <table>
+                <tr>
+                    <th>Order</th><th>Developer</th><th>Price</th><th></th>
+                </tr>
+                {{range $key, $dev := .Developers}}
+                <tr>
+					 <td>{{$key}}</td>
+					 <td class="fancy" width="50%">{{$dev.Name}}</td>
+					 <td>R$ {{$dev.Price}}</td>
+					 <td width="120px">
+						<form action="/remove-from-cart" method="post">
+							<input type="hidden" name="price" value={{$dev.Price}}>
+    						<button class="delete" name="removeFromCart" value="{{$dev.Name}}">Remove</button>
+						</form>
+					 </td>
+                </tr>
+                {{end}}
+            </table> 
+        </div>
+		<div class="text-center">
+			<p>Your purchase totals to <b>R$ {{.Total_Price}}</b></p>
+				<form action="/confirm-purchase" method="post">
+  						<button class="confirm" name="confirmPurchase" value="">Confirm Purchase</button>
+				</form>
+		</div>	
+	</body>
+</html>

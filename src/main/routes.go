@@ -21,7 +21,7 @@ var routes = Routes{
 		Index,
 	},
 	Route{
-		"allDevelopers",
+		"showAllDevelopers",
 		"GET",
 		"/developers",
 		showAllDevelopers,
@@ -31,5 +31,29 @@ var routes = Routes{
 		"GET",
 		"/developers/{devId}",
 		showDeveloper,
+	},
+	Route{
+		"updateCart",
+		"POST",
+		"/update-cart",
+		updateCart,
+	},
+	Route{
+		"removeFromCart",
+		"POST",
+		"/remove-from-cart",
+		removeFromCart,
+	},
+	Route{
+		"showCart",
+		"GET",
+		"/check-out",
+		showCart,
+	},
+	Route{
+		"confirmPurchase",
+		"POST",
+		"/confirm-purchase",
+		confirmPurchase,
 	},
 }

@@ -2,10 +2,12 @@ package main
 
 type Developer struct {
 	Name      string `json:"name"`
-	Followers int    `json:"followers"`
-	Stars     int    `json:"stars"`
-	Commits   int    `json:"commits"`
-	N_repos   int    `json:"n_repos"`
+	Followers int64  `json:"followers"`
+	Stars     int64  `json:"stars"`
+	Commits   int64  `json:"commits"`
+	N_repos   int64  `json:"n_repos"`
+	Avatar    string `json:"avatar"`
+	Price     string `json:"price"`
 }
 
 type Developers []Developer

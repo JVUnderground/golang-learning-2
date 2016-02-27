@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# populate_db(owner, 
-#
-#
-#
-#
-#
+# populate_db(owner, project): returns database with project contributors 
 
 import requests
 import sys

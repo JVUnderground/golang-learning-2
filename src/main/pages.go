@@ -389,6 +389,10 @@ func confirmPurchase(w http.ResponseWriter, r *http.Request) {
 		devs = append(devs, Developer{Name: empName.String, Followers: empFollowers.Int64, Stars: empStars.Int64, Commits: empCommits.Int64, N_repos: empN_repos.Int64, Avatar: empAvatar.String, Price: ""})
 	}
 
+	// Agora que confiramos a compra, precisamos destruir a sessão.
+	session.Values["Cart"] = nil
+	session.Save(r, w)
+
 	t, err := template.ParseFiles("templates/confirm.html")
 	if err != nil {
 		panic(err)

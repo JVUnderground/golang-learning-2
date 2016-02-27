@@ -36,6 +36,7 @@ A idéia é que seguidores denota popularidade, não necessáriamente capacidade
 A partir do nível topo do projeto faça:
 
 cd src/main
+
 go get
 
 go install main
@@ -49,5 +50,6 @@ bin/main
 A partir do nível topo do projeto faça:
 
 cd src/tests
+
 go test --v
 

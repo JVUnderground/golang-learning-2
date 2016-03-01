@@ -32,6 +32,9 @@ O meu é:
 
 A idéia é que seguidores denota popularidade, não necessáriamente capacidade, logo um peso pequeno. O número de repositórios é proporcional ao nível de atividade do programador, já o número de estrelas provavelmente é proporcional ao quão creativo são seus projetos. Como ambos os campos denota capacidade cognitiva, dei maior pesos a eles. Por final, dei maior peso às contribuições ao projeto de interesse, já que isso de certa maneira mostra que ele entende daquele assunto/projeto específico. Como isso pode ser de grande importância para a pessoa que o contrata, achei razoável colocar o maior peso a esse item.
 
+### PRÉ-REQUISITOS
+go version go1.3
+
 ### BUILD
 A partir do nível topo do projeto faça:
 

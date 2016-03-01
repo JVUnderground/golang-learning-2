@@ -156,7 +156,7 @@ func showAllDevelopers(w http.ResponseWriter, r *http.Request) {
 		Cart_exists:  cart_exists,
 	}
 
-	t, err := template.ParseFiles("templates/developers.html")
+	t, err := template.ParseFiles("../templates/developers.html")
 	if err != nil {
 		panic(err)
 	} else {
@@ -258,7 +258,7 @@ func showCart(w http.ResponseWriter, r *http.Request) {
 		Developers:  cart.Selected_Developers,
 	}
 
-	t, err := template.ParseFiles("templates/cart.html")
+	t, err := template.ParseFiles("../templates/cart.html")
 	if err != nil {
 		panic(err)
 	} else {
@@ -393,7 +393,7 @@ func confirmPurchase(w http.ResponseWriter, r *http.Request) {
 	session.Values["Cart"] = nil
 	session.Save(r, w)
 
-	t, err := template.ParseFiles("templates/confirm.html")
+	t, err := template.ParseFiles("../templates/confirm.html")
 	if err != nil {
 		panic(err)
 	} else {

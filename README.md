@@ -35,8 +35,10 @@ A idéia é que seguidores denota popularidade, não necessáriamente capacidade
 ### PRÉ-REQUISITOS
 go version go1.3
 
-### BUILD
-A partir do nível topo do projeto faça:
+### SETUP & BUILD
+    git clone https://github.com/JVUnderground/golang-learning-2.git
+    cd golang-learning-2
+    export GOPATH=$PWD
 
     cd src/main
     go get

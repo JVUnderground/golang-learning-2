@@ -35,21 +35,18 @@ A idéia é que seguidores denota popularidade, não necessáriamente capacidade
 ### BUILD
 A partir do nível topo do projeto faça:
 
-cd src/main
-
-go get
-
-go install main
+    cd src/main
+    go get
+    go install main
 
 ### RUN
 A partir do nível topo do projeto rode:
 
-bin/main
+    bin/main
 
 ### TESTING
 A partir do nível topo do projeto faça:
 
-cd src/tests
-
-go test --v
+    cd src/tests
+    go test --v
 
